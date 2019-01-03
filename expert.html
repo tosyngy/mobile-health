@@ -1,0 +1,401 @@
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<script>
+        var ip = 'https://tosyngy.000webhostapp.com';
+//    if (window.localStorage.getItem('server'))
+//     ip = "http://"+window.localStorage.getItem('server')
+    myStorage=window.localStorage;  
+    if(!myStorage.getItem('username'))
+        $(location).attr('href','register.html');
+</script>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mobile Health: Expert Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+        <meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+        <meta name="author" content="FreeHTML5.co" />
+
+        <!-- 
+              //////////////////////////////////////////////////////
+      
+              FREE HTML5 TEMPLATE 
+              DESIGNED & DEVELOPED by FreeHTML5.co
+                      
+              Website: 		http://freehtml5.co/
+              Email: 			info@freehtml5.co
+              Twitter: 		http://twitter.com/fh5co
+              Facebook: 		https://www.facebook.com/fh5co
+      
+              //////////////////////////////////////////////////////
+        -->
+
+
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="images/loc.png">
+
+        <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="css/icomoon.css">
+        <!-- Bootstrap  -->         <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <!-- Flexslider  -->
+        <link rel="stylesheet" href="css/flexslider.css">
+        <!-- Theme style  -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="js/jqueryUI/jquery-ui.css">
+        <!-- Modernizr JS -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+
+
+
+        <div id="fh5co-page">
+            <header id="fh5co-header" role="banner">
+                <div class="container">
+                    <div class="header-inner">
+                        <nav role="navigation">
+                            <div style="width: 100%;padding: 0;margin: 0">
+
+                                <div class="fh5co-pricing" style="padding:">
+
+                                    <div class="container" style="width: 100%">
+                                        <div class="col-xs-6 col-sm-6 text-center fh5co-heading animate-box image1" style="display: none;padding: 0">
+                                            <img onerror="this.src='images/ask-sym.png'" class="img-responsive profilepix" style="width: 100px;background: #fff;height: 100px;border-radius: 50%;margin-top: 20px;z-index: 100">
+                                        </div>
+                                        <div class="row status1 bg-success" style="display: none" >
+
+                                            <div class="col-sm-3 col-xs-6 animate-box" style="padding: 0;word-break: break-all;">
+                                                <div class="price-box" style="text-align: center;padding: 20px 0 40px 0;height: 100%">
+                                                    <h4 class="pricing-plan glyphicon glyphicon-pen" style="margin: 0"><span class="name">Full name</span></h4><p></p>
+                                                    <h6 class="pricing-plan glyphicon glyphicon-pen" style="margin: 0"><small class="username">Username</small></h6><p></p>
+                                                    <h6 class="pricing-plan glyphicon glyphicon-pen" style="margin: 0"><small class="mobile">+23400008893</small></h6><p></p> </div>
+
+                                            </div>
+                                            <!--<a class="btn btn-warning btn-sm" style="float: right;font-size: 11px" id="logout">logout</a>-->
+                                        </div>
+
+                                        <div class="row" style="background: #444;padding: 15px;">
+                                            <ul>
+                                                <!--<li><a href="index.html" class="">Home</a></li>-->
+                                                <li class="login1" style="display: none"><a href="login.html" class="">Login</a></li>
+                                                <li class="register1" style="display: none"><a href="Register.html" class=" register">Register</a></li>
+                                                <hr/>
+                                                <li><a href="profile.html" class="">Profile</a></li>
+                                                <li><a href="appointments.html" class="">Appointment Records</a></li>
+                                                <li><a href="healthrecord.html" class="">Health Record</a></li>
+                                                <li><a href="drugrecord.html" class="">Drug Record</a></li>
+                                                <li><a href="expert.html" class="">Meet Experts</a></li>
+                                                <li class="logout1" style="display: none"> <a class="btn btn-warning btn-sm" style="float: right;font-size: 11px;color: #fff" id="logout">Sign Out</a></li>
+                                                <li><a href="setup.html" class="">Setting</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+
+
+
+            <div class="fh5co-pricing" style="min-height: 100%;">
+                <div class="col-md-12" style="background: #000;padding:5px 0;margin-bottom: 10px">
+                    <h3 style="color: #fff;">Medical Experts</h3>
+                </div>	
+                <div class="container">
+
+
+                    <div class="row" id="container" style="margin-bottom: 20px">
+                        <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+                            <p>Meet medical expert</p>
+                            <div class="col-xs-12">
+                                <div style="width: 100%;margin-bottom:5px">
+                                    <div class="row">
+                                        <select name="doctype" class="form-control" id="expert" style="border-width: thin;height: 40px">
+                                            <option value="">Select Specialty/Service</option>
+                                            <option value="Physician">Physician</option>
+                                            <option value="Surgeon">Nurse</option>
+                                            <option value="General Practitioner">General Practitioner</option>
+                                            <option value="Pharmacist">Pharmacist</option>
+                                            <option value="Dentist">Nurse</option>
+                                            <option value="Nurse Practitioner">Nurse Practitioner</option>
+                                            <option value="Anesthesiology">Anesthesiology</option>
+                                            <option value="Psychiatrist">Psychiatrist</option>
+                                            <option value="Health Professional">Health Professional</option>
+                                            <option value="Veterinary Physicial">Veterinary Physician</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div style="width: 100%">
+                                    <div class="row">
+                                        <div style="width: 100%">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Search for expert" id="keyword" style="border-width: thin;height: 40px">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-default" id="search" type="button" style="border: solid thin #888;height: 40px; border-radius:0 5px 5px 0">Go!</button>
+                                                </span>
+                                            </div><!-- /input-group -->
+                                        </div><!-- /.col-lg-6 -->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id='pricing'>
+                            <h5 style="color: #ccc;text-align: center;font-style: italic;padding: 20%">
+                                Expert Information Will Display here
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="dialog"  title="Dr. Profile name">
+                <div class="pricing">
+                    <div class="col-md-3">
+                        <div class=" col-xs-12 col-sm-12" style=" margin-top: 10px;">
+                            <div class="row-bottom-padded-lg text-center fh5co-heading" style="margin-top:10px;margin-bottom:10px">
+                                <img src="images/ask-sym.png" class="img-responsive" style="width: 100%;background: #fff;border-radius: 50%;z-index: 100">
+                                <h4 class="pricing-plan" style="margin: 0;color: #5b5b5b">Specialty</h4>
+                            </div>
+                            <div class="row" style="background: #fff;text-align: center">
+                                <div class="pricing">
+                                    <label for="appointment">Please provide more details below</label>
+                                    <div class="row-bottom-padded-sm" style="padding-top: 10px">
+                                        <div class="form-group">
+                                            <input class="form-control" name="appontment" placeholder="Appointment Date" type="datetime-local" id="appointmentdate">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" name="description" placeholder="Description" type="text" id="description">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="fh5co-footer" role="contentinfo" style="position: relative;bottom: 0;">
+
+                <div class="container"  style="text-align: center">
+
+                    &copy; 2018 Mobile Health System. All Rights Reserved. 
+                </div>
+            </footer>
+        </div>
+
+        
+<!--         <form action="" method="">
+            <div id="jsalarmclock">
+                <div><div class="leftcolumn">Current Time:</div> <span id="jsalarm_ct" style="letter-spacing: 2px"></span></div>
+                <div><div class="leftcolumn">Set Alarm:</div> <span><select></select> Hour</span> <span><select></select> Minutes</span> <span><select></select> Seconds</span></div>
+                <div><div class="leftcolumn">Set Alarm Action:</div> <input type="text" id="musicloc" size="55" value="http://www.youtube.com/watch?v=v1zY_tV5kaQ" /> <span style="font: normal 11px Tahoma">*Location of page to launch</span></div>
+                <input type="submit" value="Set Alarm!" id="submitbutton" /> <input type="reset" value="reset" id="resetbutton" />
+            </div>
+        </form>-->
+        
+
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="js/jquery.easing.1.3.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Waypoints -->
+        <script src="js/jquery.waypoints.min.js"></script>
+        <!-- Easy PieChart -->
+        <script src="js/jquery.easypiechart.min.js"></script>
+        <!-- Flexslider -->
+        <script src="js/jquery.flexslider-min.js"></script>
+        <!-- Stellar -->
+        <script src="js/jquery.stellar.min.js"></script>
+
+        <!-- MAIN JS -->
+        <script src="js/main.js"></script>
+        <script src="js/jqueryUI/jquery-ui.js"></script>
+        <script src="js/script.js"></script>
+        <style>
+            .ui-dialog{
+                width: 90% !important;
+                left: 5% !important;
+
+            }  
+            #dialog{
+                display: none; 
+            }
+        </style>
+        <script type="text/javascript">
+            // var ip='http://192.168.1.206';
+          //  var ip='https://tosyngy.000webhostapp.com';
+            $(function(){
+                
+                $.get(ip+"/mobilehealthserver/expertdata.php",
+                function(data){
+                    var record= JSON.parse(data);
+                    var template="";
+                    $.each(record, function(id,item){
+                        var url="src='"+ip+"/mobilehealthserver/uploads/usr_profile/"+item.id+".png'";
+                        template+="<div class='pricing'>"
+                        template+="<div class='col-md-3'>"
+                        template+="<div class=' col-xs-12 col-sm-12' style=' margin-top: 10px;'>"
+                        template+="<div class='col-xs-6 col-sm-6 text-center fh5co-heading' style='margin-top:10px'>"
+                        template+="<img "+url+" class='img-responsive' style='width: 100%;background: #fff;;height: 120px;border-radius: 50%;z-index: 100'>"
+                        template+="<h4 class='pricing-plan' style='margin: 0;color: #fff'>Dr. "+item.firstname+' '+item.othername+"</h4>"
+                        template+="</div>"
+
+                        template+="<div class='row' style='background: #5bc0de;word-break: break-word;'>"
+                        template+="<div class='pricing' style='color: #fff'>"
+                        template+="<div class='col-sm-3 col-xs-6'>"
+                        template+="<div style='text-align: left;padding: 0'>"
+
+                        template+="<h5 class='pricing-plan icon-dot-circle-o' style='margin: 0;color: #fff;padding:5px'>:"+item.other1+"</h5>"
+                        template+="<h6 class='pricing-plan icon-envelope-square' style='margin: 0;color: #fff;padding:5px'>:"+item.email+"</h6>"
+                        template+="<h6 class='pricing-plan icon-phone-square' style='margin: 0;color: #fff;padding:5px'>: "+item.other2+"</h6>"
+                        template+="<h6 class='pricing-plan icon-location-arrow' style='margin: 0;color: #fff;padding:5px'>:"+item.other3+"</h6>"
+                        template+="</div>"
+                        template+="<div class='col-xs-12' style='padding-top: 30px'>"
+                        template+="<a class='btn btn-danger btn-outline with-arrow appointment' detail='"+item.id+';'+item.firstname+';'+item.othername+';'+item.other1+"'>Book Appointment<i class='icon-arrow-right'></i></a></p>"
+                        template+="</div>"
+                        template+="</div>"
+                        template+="</div>"
+                        template+="</div>"
+
+                        template+="</div>"
+                        template+="</div>"
+                        template+="</div>"
+                        
+                      
+                    })
+                    template+="<div id='pricing'></div>"
+                    $('#pricing').replaceWith(template);
+                })
+            
+                $("#search").click(function(){
+                    $.get(ip+"/mobilehealthserver/expertdata.php",{
+                        id:window.localStorage.getItem('id'),
+                        expert:$('#expert').val(),
+                        keyword:$('#keyword').val()
+                    },
+                    function(data){
+                        var record= JSON.parse(data);
+                        var template="";
+                        if(record==""){
+                            var template="<div id='pricing'>";
+                            template+="<h5 style='color: #ccc;text-align: center;font-style: italic;padding: 20%'>";
+                            template+="Your Parameter does not match";
+                            template+="</h5></div>";
+                        }else{
+                            $.each(record, function(id,item){
+                                var url="src='"+ip+"/mobilehealthserver/uploads/usr_profile/"+item.id+".png'";
+                                template+="<div class='pricing'>"
+                                template+="<div class='col-md-3'>"
+                                template+="<div class=' col-xs-12 col-sm-12' style=' margin-top: 10px;'>"
+                                template+="<div class='col-xs-6 col-sm-6 text-center fh5co-heading' style='margin-top:10px'>"
+                                template+="<img "+url+" class='img-responsive' style='width: 100%;background: #fff;;height: 120px;border-radius: 50%;z-index: 100'>"
+                                template+="<h4 class='pricing-plan' style='margin: 0;color: #fff'>Dr. "+item.firstname+' '+item.othername+"</h4>"
+                                template+="</div>"
+
+                                template+="<div class='row' style='background: #5bc0de;word-break: break-word;'>"
+                                template+="<div class='pricing' style='color: #fff'>"
+                                template+="<div class='col-sm-3 col-xs-6'>"
+                                template+="<div style='text-align: left;padding: 0'>"
+
+                                template+="<h5 class='pricing-plan icon-dot-circle-o' style='margin: 0;color: #fff;padding:5px'>:"+item.other1+"</h5>"
+                                template+="<h6 class='pricing-plan icon-envelope-square' style='margin: 0;color: #fff;padding:5px'>:"+item.email+"</h6>"
+                                template+="<h6 class='pricing-plan icon-phone-square' style='margin: 0;color: #fff;padding:5px'>: "+item.other2+"</h6>"
+                                template+="<h6 class='pricing-plan icon-location-arrow' style='margin: 0;color: #fff;padding:5px'>:"+item.other3+"</h6>"
+                                template+="</div>"
+                                template+="<div class='col-xs-12' style='padding-top: 30px'>"
+                                template+="<a class='btn btn-danger btn-outline with-arrow appointment' detail='"+item.id+';'+item.firstname+';'+item.othername+';'+item.other1+"'>Book Appointment<i class='icon-arrow-right'></i></a></p>"
+                                template+="</div>"
+                                template+="</div>"
+                                template+="</div>"
+                                template+="</div>"
+
+                                template+="</div>"
+                                template+="</div>"
+                                template+="</div>"
+                    
+                            })
+                            template+="<div id='pricing'></div>"
+                        }
+                        
+                        $('#container .pricing').remove();
+                        $('#pricing').replaceWith(template);
+                    
+                
+                
+                        var nomatch="<div id='pricing'>";
+                        nomatch+="<h5 style='color: #ccc;text-align: center;font-style: italic;padding: 20%'>";
+                        nomatch+="Your Parameter does not match";
+                        nomatch+="</h5></div>";
+                    })
+                })
+                
+                $(document).on('click','.appointment',function(){
+                    var detail=$(this).attr('detail').split(';');
+                    var id=detail[0];
+                    var url=ip+"/mobilehealthserver/uploads/usr_profile/"+id+".png";
+                    var name=(detail[1]+' '+detail[2]).toUpperCase();
+                    var speciality=detail[3];
+                    $("#dialog").attr('title','Dr. '+ name);
+                    $("#dialog .pricing-plan").text(speciality);
+                    $("#dialog img").attr('src',url);
+                
+                    $("#dialog").dialog({
+                        resizable: false,
+                        height: "auto",
+                        width: 400,
+                        modal: true,
+                        buttons: {
+                            "I'm done booking": function() {
+                                $.post(ip+'/mobilehealthserver/appointments.php',{
+                                    patientid:window.localStorage.getItem('id'),
+                                    expertid:id,
+                                    appointmenttime:$('#appointmentdate').val(),
+                                    description:$('#description').val()
+                                },function(data){
+                                    if(data==='successful'){
+                                        alert('Appointment Booked Successful');
+                                        $( this ).dialog( "close" );  
+                                    }else
+                                        alert('An Error Occur, Try again')
+                                })
+                            },
+                            "Close": function() {
+                                $( this ).dialog( "close" );
+                            }
+                        }
+                    });
+                })
+            })
+   
+        </script>
+
+    </body>
+</html>
+

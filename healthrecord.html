@@ -1,0 +1,347 @@
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<script>
+    var ip = 'https://tosyngy.000webhostapp.com';
+//    if (window.localStorage.getItem('server'))
+//       ip = "http://"+window.localStorage.getItem('server')
+    myStorage = window.localStorage;
+    if (!myStorage.getItem('username'))
+        $(location).attr('href', 'register.html');
+</script>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mobile Health: Drug Record</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+        <meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+        <meta name="author" content="FreeHTML5.co" />
+
+        <!-- 
+              //////////////////////////////////////////////////////
+      
+              FREE HTML5 TEMPLATE 
+              DESIGNED & DEVELOPED by FreeHTML5.co
+                      
+              Website: 		http://freehtml5.co/
+              Email: 			info@freehtml5.co
+              Twitter: 		http://twitter.com/fh5co
+              Facebook: 		https://www.facebook.com/fh5co
+      
+              //////////////////////////////////////////////////////
+        -->
+
+        <!-- Facebook and Twitter integration -->
+        <meta property="og:title" content=""/>
+        <meta property="og:image" content=""/>
+        <meta property="og:url" content=""/>
+        <meta property="og:site_name" content=""/>
+        <meta property="og:description" content=""/>
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:image" content="" />
+        <meta name="twitter:url" content="" />
+        <meta name="twitter:card" content="" />
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="images/loc.png">
+
+        <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="css/icomoon.css">
+        <!-- Bootstrap  -->         <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <!-- Flexslider  -->
+        <link rel="stylesheet" href="css/flexslider.css">
+        <!-- Theme style  -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Modernizr JS -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body style="min-height: 100%;background: #fff">
+
+
+        <div id="fh5co-page">
+            <header id="fh5co-header" role="banner">
+                <div class="container">
+                    <div class="header-inner" style="height: 0">
+                        <nav role="navigation">
+                            <div style="width: 100%;padding: 0;margin: 0">
+
+                                <div class="fh5co-pricing" style="padding: 0;">
+
+                                    <div class="container" style="width: 100%">
+                                        <div class="col-xs-6 col-sm-6 text-center fh5co-heading animate-box image1" style="display: none;padding: 0">
+                                            <img onerror="this.src='images/ask-sym.png'" class="img-responsive profilepix" style="width: 100px;background: #fff;height: 100px;border-radius: 50%;margin-top: 20px;z-index: 100">
+                                        </div>
+                                        <div class="row status1 bg-success" style="display: none" >
+
+                                            <div class="col-sm-3 col-xs-6 animate-box" style="padding: 0;word-break: break-all;">
+                                                <div class="price-box" style="text-align: center;padding: 20px 0 40px 0;height: 100%">
+                                                    <h4 class="pricing-plan glyphicon glyphicon-pen" style="margin: 0"><span class="name">Full name</span></h4><p></p>
+                                                    <h6 class="pricing-plan glyphicon glyphicon-pen" style="margin: 0"><small class="username">Username</small></h6><p></p>
+                                                    <h6 class="pricing-plan glyphicon glyphicon-pen" style="margin: 0"><small class="mobile">+23400008893</small></h6><p></p> </div>
+
+                                            </div>
+                                            <!--<a class="btn btn-warning btn-sm" style="float: right;font-size: 11px" id="logout">logout</a>-->
+                                        </div>
+
+                                        <div class="row" style="background: #444;padding: 15px;">
+                                            <ul>
+                                                <!--<li><a href="index.html" class="">Home</a></li>-->
+                                                <li class="login1" style="display: none"><a href="login.html" class="">Login</a></li>
+                                                <li class="register1" style="display: none"><a href="Register.html" class=" register">Register</a></li>
+                                                <hr/>
+                                                <li><a href="profile.html" class="">Profile</a></li>
+                                                <li><a href="appointments.html" class="">Appointment Records</a></li>
+                                                <li><a href="healthrecord.html" class="">Health Record</a></li>
+                                                <li><a href="drugrecord.html" class="">Drug Record</a></li>
+                                                <li><a href="expert.html" class="">Meet Experts</a></li>
+                                                <li class="logout1" style="display: none"> <a class="btn btn-warning btn-sm" style="float: right;font-size: 11px;color: #fff" id="logout">Sign Out</a></li>
+                                                <li><a href="setup.html" class="">Setting</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+
+
+
+            <div class="fh5co-pricing" style="min-height:95%">
+                <div class="col-md-12" style="background: #000;padding:5px 0;margin-bottom: 10px">
+                    <h3 style="color: #fff;">Patient Health Record</h3>
+                    <h6 style="color: #fff;text-align: center;z-index: 2000"><a href="healthsubmit.html">+Add new</a></h6>
+                </div>	
+                <div class="container">
+                    <div class="row" id="container" style="margin-bottom: 20px">
+                        <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+                            <p>List of health records across doctors</p>
+                            <div class="col-xs-12" style="background: #fff;">
+                                <div style="width: 100%;margin-bottom:5px">
+                                    <div class="row">
+                                        <select name="expert" id="expert" class="form-control" id="" style="border-width: thin;height: 40px;border-width: 0px 0px 1px 0;">
+                                            <option value="">Select Expert Name</option>
+                                            <!--  <option value="Dr. Akilabi">Dr. Akilabi</option>
+                                            <option value="Nurse Titi">Nurse Titi</option>-->
+                                        </select>
+                                    </div>
+                                </div>
+                                <div style="width: 100%;margin-bottom:5px">
+                                    <div class="row">
+                                        <select name="illness" id="illness" class="form-control" style="border-width: thin;height: 40px;border-width: 0px 0px 1px 0;">
+                                            <option value="">Illness</option>
+                                            <!--                                            <option value="Malaria">Malaria</option>
+                                                                                        <option value="Typhoid">Typhoid</option>-->
+                                        </select>
+                                    </div>
+                                </div>
+                                <div style="width: 100%">
+                                    <div class="row">
+                                        <div style="width: 100%">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="keyword" placeholder="Search for records" style="border-width: thin;height: 40px">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-default" id="search" type="button" style="border: solid thin #888;height: 40px;">Go!</button>
+                                                </span>
+                                            </div><!-- /input-group -->
+                                        </div><!-- /.col-lg-6 -->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div id='pricing'>
+                            <h5 style="color: #ccc;text-align: center;font-style: italic;padding: 20%">
+                                Your Health Diagnosis Will Display here
+                            </h5>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <footer id="fh5co-footer" role="contentinfo" style="position: relative;bottom: 0;">
+
+                <div class="container"  style="text-align: center">
+
+                    &copy; 2018 Mobile Health System. All Rights Reserved. 
+                </div>
+            </footer>
+        </div>
+
+
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="js/jquery.easing.1.3.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Waypoints -->
+        <script src="js/jquery.waypoints.min.js"></script>
+        <!-- Easy PieChart -->
+        <script src="js/jquery.easypiechart.min.js"></script>
+        <!-- Flexslider -->
+        <script src="js/jquery.flexslider-min.js"></script>
+        <!-- Stellar -->
+        <script src="js/jquery.stellar.min.js"></script>
+
+        <!-- MAIN JS -->
+        <script src="js/main.js"></script>
+        <script src="js/script.js"></script>
+        <script type="text/javascript">
+    // var ip='http://192.168.1.206';
+    //  var ip = 'https://tosyngy.000webhostapp.com';
+    $(function () {
+
+        $.get(ip + "/mobilehealthserver/healthdata.php", {
+            id: window.localStorage.getItem('id')
+        },
+        function (data) {
+            var record = JSON.parse(data);
+            var template = "";
+            var experttemplate = "";
+            var expertlist = "";
+            var illnesstemplate = "";
+            var illnesslist = "";
+            $.each(record, function (id, item) {
+                if (expertlist.indexOf(';' + item.confirmedby + ';') < 0) {
+                    experttemplate += "<option value='" + item.confirmedby + "'> Dr. " + item.firstname + " " + item.othername + "</option>";
+                    expertlist += ';' + item.confirmedby + ';';
+                }
+                if (illnesslist.indexOf(';' + item['diseasename'] + ';') < 0) {
+                    illnesstemplate += "<option value='" + item['diseasename'] + "'>" + item.diseasename + "</option>";
+                    illnesslist += ';' + item['diseasename'] + ';';
+                }
+
+
+
+                var url = "src='" + ip + "/mobilehealthserver/uploads/usr_profile/" + item.confirmedby + ".png'";
+                template += "<div class='pricing'>";
+                template += "<div class='col-md-3'>";
+                template += "<div class='col-md-12 primary' style='background: #f0ad4e;padding:5px 0; margin-top: 10px;'>"
+                template += "<h5 style='color: #fff;margin-top: 5px;text-transform: capitalize;'> Dr. " + item.firstname + " " + item.othername;
+                template += "<span style='text-transform: capitalize;float: right;margin-right:10px;font-size:11px;color:#eee'>Diagnosed:</span><br />";
+                template += "<span style='color: #eee;font-size: 11px'>" + item.timesaved
+                template += "</span><span style='text-transform: capitalize;float: right;margin-right:10px;font-size:16px'>" + item.diseasename + "</span></h5>";
+                template += "</div>"
+                template += "<div class='price-box' style='padding: 5px'>"
+                template += "<div class='col-xs-3 col-sm-3 text-center' style='padding: 0'>"
+                template += "<img " + url + " class='img-responsive' style='width: 100%;background: #eef;;height: 80px;border-radius: 50%;padding-top: 0;'>"
+
+                template += "</div>"
+                template += "<div class='col-sm-9 col-xs-9'>"
+                template += "<div class='text-info text-left' style='padding-right: 0'>"
+                template += "<span>" + item.description + " </span>"
+                template += "</div></div>";
+
+                template += "&nbsp;"
+                template += "<div class='col-xs-12'>";
+                template += "<a class='btn btn-warning btn-outline with-arrow'>Allergic To: " + item.Allergy + " <i class='icon-arrow-right'></i></a>";
+                template += "&nbsp;&nbsp;&nbsp;&nbsp;"
+                template += "<a class='btn btn-primary btn-outline with-arrow'>Relief To: " + item.relieffactor + " <i class='icon-arrow-right'></i></a>";
+                template += "&nbsp;&nbsp;&nbsp;&nbsp;"
+                template += "</div><div class='clearfix'>&nbsp</div>"
+                template += "</div></div></div>";
+
+
+            })
+            template += "<div id='pricing'></div>"
+            $('#pricing').replaceWith(template);
+            $('#expert').append(experttemplate);
+            $('#illness').append(illnesstemplate);
+        })
+
+        $("#search").click(function () {
+            $.get(ip + "/mobilehealthserver/healthdata.php", {
+                id: window.localStorage.getItem('id'),
+                expert: $('#expert').val(),
+                illness: $('#illness').val(),
+                keyword: $('#keyword').val()
+            },
+            function (data) {
+                if (data === "record not found") {
+                    var nomatch = "<div id='pricing'>";
+                    nomatch += "<h5 style='color: #ccc;text-align: center;font-style: italic;padding: 20%'>";
+                    nomatch += "Your Parameter does not match";
+                    nomatch += "</h5></div>";
+                    $('#container .pricing').remove();
+                    $('#pricing').replaceWith(nomatch);
+                    return false;
+                }
+                var record = JSON.parse(data);
+                var template = "";
+                if (record.length == "") {
+                    var template = "<div id='pricing'>";
+                    template += "<h5 style='color: #ccc;text-align: center;font-style: italic;padding: 20%'>";
+                    template += "Your Parameter does not match";
+                    template += "</h5></div>";
+                } else {
+                    $.each(record, function (id, item) {
+                        var url = "src='" + ip + "/mobilehealthserver/uploads/usr_profile/" + item.confirmedby + ".png'";
+                        template += "<div class='pricing'>";
+                        template += "<div class='col-md-3'>";
+                        template += "<div class='col-md-12 primary' style='background: #f0ad4e;padding:5px 0; margin-top: 10px;'>"
+                        template += "<h5 style='color: #fff;margin-top: 5px;text-transform: capitalize;'> Dr. " + item.firstname + " " + item.othername;
+                        template += "<span style='text-transform: capitalize;float: right;margin-right:10px;font-size:11px;color:#eee'>Diagnosed:</span><br />";
+                        template += "<span style='color: #eee;font-size: 11px'>" + item.timesaved
+                        template += "</span><span style='text-transform: capitalize;float: right;margin-right:10px;font-size:16px'>" + item.diseasename + "</span></h5>";
+                        template += "</div>"
+                        template += "<div class='price-box' style='padding: 5px'>"
+                        template += "<div class='col-xs-3 col-sm-3 text-center' style='padding: 0'>"
+                        template += "<img " + url + " class='img-responsive' style='width: 100%;background: #eef;;height: 80px;border-radius: 50%;padding-top: 0;'>"
+
+                        template += "</div>"
+                        template += "<div class='col-sm-9 col-xs-9'>"
+                        template += "<div class='text-info text-left' style='padding-right: 0'>"
+                        template += "<span>" + item.description + " </span>"
+                        template += "</div></div>";
+
+                        template += "&nbsp;"
+                        template += "<div class='col-xs-12'>";
+                        template += "<a class='btn btn-warning btn-outline with-arrow'>Allergic To: " + item.Allergy + " <i class='icon-arrow-right'></i></a>";
+                        template += "&nbsp;&nbsp;&nbsp;&nbsp;"
+                        template += "<a  class='btn btn-primary btn-outline with-arrow'>Relief To: " + item.relieffactor + " <i class='icon-arrow-right'></i></a>";
+                        template += "&nbsp;&nbsp;&nbsp;&nbsp;"
+                        template += "</div><div class='clearfix'>&nbsp</div>"
+                        template += "</div></div></div>";
+
+                    })
+                    template += "<div id='pricing'></div>"
+                }
+
+                $('#container .pricing').remove();
+                $('#pricing').replaceWith(template);
+
+
+
+
+            })
+        })
+    })
+
+        </script>
+
+    </body>
+</html>
+

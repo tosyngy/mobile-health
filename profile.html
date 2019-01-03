@@ -1,0 +1,177 @@
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<script>
+    myStorage = window.localStorage;
+    if (!myStorage.getItem('username'))
+        $(location).attr('href', 'register.html');
+</script>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mobile Health: Profile</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+        <meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+        <meta name="author" content="FreeHTML5.co" />
+
+        <!-- 
+              //////////////////////////////////////////////////////
+      
+              FREE HTML5 TEMPLATE 
+              DESIGNED & DEVELOPED by FreeHTML5.co
+                      
+              Website: 		http://freehtml5.co/
+              Email: 			info@freehtml5.co
+              Twitter: 		http://twitter.com/fh5co
+              Facebook: 		https://www.facebook.com/fh5co
+      
+              //////////////////////////////////////////////////////
+    
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="images/loc.png">
+
+        <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="css/icomoon.css">
+        <!-- Bootstrap  -->         <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <!-- Flexslider  -->
+        <link rel="stylesheet" href="css/flexslider.css">
+        <!-- Theme style  -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Modernizr JS -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <header id="fh5co-header" role="banner">
+            <div class="container">
+                <div class="header-inner">
+                    <nav role="navigation">
+                        <div style="width: 100%;padding: 0;margin: 0">
+
+                            <div class="fh5co-pricing" style="padding: 0;">
+
+                                <div class="container" style="width: 100%">
+                                    <div class="col-xs-6 col-sm-6 text-center fh5co-heading animate-box image1" style="display: none;padding: 0">
+                                        <img onerror="this.src='images/ask-sym.png'" class="img-responsive profilepix" style="width: 100px;background: #fff;height: 100px;border-radius: 50%;margin-top: 20px;z-index: 100">
+                                    </div>
+                                    <div class="row status1 bg-success" style="display: none" >
+
+                                        <div class="col-sm-3 col-xs-6 animate-box" style="padding: 0;word-break: break-all;">
+                                            <div class="price-box" style="text-align: center;padding: 20px 0 40px 0;height: 100%">
+                                                <h4 class="pricing-plan glyphicon glyphicon-pen" style="margin: 0"><span class="name">Full name</span></h4><p></p>
+                                                <h6 class="pricing-plan glyphicon glyphicon-pen" style="margin: 0"><small class="username">Username</small></h6><p></p>
+                                                <h6 class="pricing-plan glyphicon glyphicon-pen" style="margin: 0"><small class="mobile">+23400008893</small></h6><p></p> </div>
+
+                                        </div>
+                                        <!--<a class="btn btn-warning btn-sm" style="float: right;font-size: 11px" id="logout">logout</a>-->
+                                    </div>
+
+                                    <div class="row" style="background: #444;padding: 15px;">
+                                        <ul>
+                                            <!--<li><a href="index.html" class="">Home</a></li>-->
+                                            <li class="login1" style="display: none"><a href="login.html" class="">Login</a></li>
+                                            <li class="register1" style="display: none"><a href="Register.html" class=" register">Register</a></li>
+                                            <hr/>
+                                            <li><a href="profile.html" class="">Profile</a></li>
+                                            <li><a href="appointments.html" class="">Appointment Records</a></li>
+                                            <li><a href="healthrecord.html" class="">Health Record</a></li>
+                                            <li><a href="drugrecord.html" class="">Drug Record</a></li>
+                                            <li><a href="expert.html" class="">Meet Experts</a></li>
+                                            <li class="logout1" style="display: none"> <a class="btn btn-warning btn-sm" style="float: right;font-size: 11px;color: #fff" id="logout">Sign Out</a></li>
+                                            <li><a href="setup.html" class="">Setting</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div id="fh5co-page">
+            <div class="col-md-12" style="background: #000;padding:5px 0;margin-bottom: 10px">
+                <!--<h5 style="float: right;vertical-align: baseline;padding: 20px"><a href="login.html">Home</a></h5>-->
+                <h3 style="color: #fff;">Profile</h3>
+            </div>
+
+            <div class="fh5co-pricing" style="padding: 0 10%">
+                <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+                    <img onerror="this.src='images/ask-sym.png'" class="img-responsive profilepix" class="img-responsive" style="width: 100%;height: 250px">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="pricing">
+                            <div class="col-sm-3 animate-box">
+                                <div class="price-box" style="text-align: center">
+                                    <h1 class="pricing-plan glyphicon glyphicon-pen name">Profile name</h1><br />
+                                    <h4 class="pricing-plan glyphicon glyphicon-pen username">email@address</h4><br />
+                                    <h4 class="pricing-plan glyphicon glyphicon-pen mobile">+234</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3 animate-box" style="text-align: center">
+
+                            <h4 style="    text-transform: uppercase;text-align: left;background: #3c2c21;color: #fff; padding: 10px;">Medical Expert Inform</h4>
+                            <h4 class="pricing-plan glyphicon glyphicon-pen other1">Medical Expert name</h4><br />
+                            <h4 class="pricing-plan glyphicon glyphicon-pen other2">Office Line</h4><br />
+                            <h4 class="pricing-plan glyphicon glyphicon-pen other3">+234</h4>
+                            <!--                            <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>-->
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <footer id="fh5co-footer" role="contentinfo" style="position: relative;bottom: 0;">
+
+                <div class="container"  style="text-align: center">
+
+                    &copy; 2018 Mobile Health System. All Rights Reserved. 
+                </div>
+            </footer>
+        </div>
+
+
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="js/jquery.easing.1.3.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Waypoints -->
+        <script src="js/jquery.waypoints.min.js"></script>
+        <!-- Easy PieChart -->
+        <script src="js/jquery.easypiechart.min.js"></script>
+        <!-- Flexslider -->
+        <script src="js/jquery.flexslider-min.js"></script>
+        <!-- Stellar -->
+        <script src="js/jquery.stellar.min.js"></script>
+
+        <!-- MAIN JS -->
+        <script src="js/main.js"></script>
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
+
